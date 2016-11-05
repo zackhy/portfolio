@@ -3,23 +3,36 @@
 	src: url("../font/Archive.otf");
 }
 
-h1{
-	font-size:65px;
-	font-family: Archive,Helvetica,Arial,sans-serif;
-	letter-spacing: 1px;
-	color: #fff;
-	line-height: 75px;
+.blue{
+	color: #4885ed;
+}
+
+.red{
+	color: #db3236
+}
+
+.yellow{
+	color: #f4c20d;
+}
+
+.green{
+	color: #3cba54;
 }
 
 h2 {
-	text-align: center;
 	font-family: Helvetica,Arial,sans-serif;
 	letter-spacing: 1px;
 	font-weight: bold;
 	font-size: 45px;
-	text-decoration: underline;
 	font-style: italic;
 	margin: 1px;
+}
+
+h3 {
+	font-family: Helvetica,Arial,sans-serif;
+	letter-spacing: 1px;
+	font-size: 30px;
+	margin: 1px 0px 10px;
 }
 
 /*navbar style*/
@@ -34,6 +47,15 @@ h2 {
 	font-size: 40px;
 	font-weight: bold;
 	color: #48D1CC;
+}
+
+@media(max-width: 420px){
+	.navbar-default .navbar-brand {
+	    font-family: Helvetica,Arial,sans-serif;	
+	    font-size: 30px;
+	    font-weight: bold;
+	    color: #48D1CC;
+    }
 }
 
 .navbar-default .navbar-brand:hover,
@@ -75,16 +97,65 @@ header{
 	height: 650px;
 }
 
-.welcomeinfo{
+#welcome-info{
 	margin-top: 250px;
 	text-align: center;
 }
 
-#page-content {
-	position: relative;
+#welcome-text{
+	font-size:65px;
+	font-family: Archive,Helvetica,Arial,sans-serif;
+	letter-spacing: 1px;
+	color: #fff;
+	line-height: 75px;
 }
 
-.icon{
-	margin: 50px 0px 0px;
-	text-align:center
+@media(max-width: 420px){
+	header{
+	    background: url(../pic/bg.png) no-repeat;
+	    background-size: cover;
+	    height: 400px;
+    }
+    #welcome-info{
+	    margin-top: 150px;
+	    text-align: center;
+    }
+    #welcome-text{
+	    font-size:50px;
+	    font-family: Archive,Helvetica,Arial,sans-serif;
+	    letter-spacing: 1px;
+	    color: #fff;
+	    line-height: 65px;
+    }
+    #hidden{
+    	display: none;
+    }
+}
+
+#page-content {
+	margin: 50px 0 50px;
+}
+
+#intro-info {
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+hr {
+	margin: 10px;
+	border: 1px solid #000000;
+	width: 120px;
+}
+
+.box-item {
+	text-align: center;
+}
+
+.icon-margin {
+	margin: 10px 0px 10px;
+}
+
+.intro-text {
+	font-size: 18px;
+	font-family: Helvetica,Arial,sans-serif;
 }
