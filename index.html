@@ -14,7 +14,7 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 	
     <!-- My Own CSS -->
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -53,24 +53,60 @@
     </nav>
 	
     <!-- header -->
-	<header>
-		<div class="container">
-			<div class="welcomeinfo">
-				<h1>
-					hi there
-					<br>welcome to my site!</br>
-				</h1>
-			</div>
-		</div>
+	<header id="index-header">
+		<div class="container-fluid">
+			<div class="row">
+                <div class="col-lg-12">
+                    <div id="welcome-info">
+                        <h1 id="welcome-text">Hi there
+                            <br>Welcome<span id="hidden"> to My Site</span>!</h1>
+                        </h1>
+                    </div>
+                </div>         
+            </div>
 	</header>
 
     <!-- content -->
-    <div id="page-content" class="index-page">
-        <div class="icon">
-            <i class="fa fa-address-book fa-4x" aria-hidden="true"></i>
+    <div id="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="intro-info">
+                    <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i>
+                    <h2>About Me</h2>
+                    <center><hr /></center>
+                </div>
+                <div class="col-lg-3 box-item blue">
+                    <i class="fa fa-user-circle fa-4x icon-margin" aria-hidden="true"></i>
+                    <h3>Name</h3>
+                    <p class="intro-text">My Chinese name is Haoyou Liu
+                    <br>(i.e.刘豪右)
+                    <br>Or you can call me Zack</p>
+                </div>
+                <div class="col-lg-3 box-item red">
+                    <i class="fa fa-graduation-cap fa-4x icon-margin" aria-hidden="true"></i>
+                    <h3>School</h3>
+                    <p class="intro-text">I finishied my undergraduate study at Wuhan University
+                    <br>Now I'm studying at U-M</p>
+                </div>
+                <div class="col-lg-3 box-item yellow">
+                    <i class="fa fa-university fa-4x icon-margin" aria-hidden="true"></i>
+                    <h3>Address</h3>
+                    <p class="intro-text">I live in Apt.410
+                    <br>Broadway St
+                    <br>Ann Arbor</p>
+                </div>
+                <div class="col-lg-3 box-item green">
+                    <i class="fa fa-plane fa-4x icon-margin" aria-hidden="true"></i>
+                    <h3>Hometown</h3>
+                    <p class="intro-text">I came from Wenzhou, China
+                    <br>Wenzhou is a beautiful city
+                    <br>I really like the seafood there</p>
+                </div>
+            </div>
         </div>
-        <h2>About Me</h2>
     </div>
+
+
 	
 
 	<!-- jQuery -->
