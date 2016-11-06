@@ -432,3 +432,8 @@ hr {
 .copyright{
 	color: #fff;
 }
+
+.photo-gallery img {
+	width: 300px;
+	height: 200px;
+}
