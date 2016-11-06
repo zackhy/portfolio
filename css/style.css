@@ -3,6 +3,22 @@
 	src: url("../font/Archive.otf");
 }
 
+.twitter-blue{
+	color: #0084b4;
+}
+
+.facebook-blue {
+	color: #3b5998;
+}
+
+.weibo-red {
+	color: #FF1121;
+}
+
+.wechat-green {
+	color: #4AFF0D;
+}
+
 .blue{
 	color: #4885ed;
 }
@@ -42,11 +58,22 @@ h3 {
 	background-color: rgba(0,0,0,0.5);
 }
 
+.nav-scroll{
+	padding: 10px;
+}
+
 .navbar-default .navbar-brand {
 	font-family: Helvetica,Arial,sans-serif;	
-	font-size: 40px;
 	font-weight: bold;
 	color: #48D1CC;
+}
+
+.brand-still {
+	font-size: 40px;
+}
+
+.brand-scroll{
+	font-size: 30px;
 }
 
 @media(max-width: 420px){
@@ -133,7 +160,8 @@ header{
 }
 
 #page-content {
-	margin: 50px 0 50px;
+	margin: 50px;
+	height: 100%;
 }
 
 #intro-info {
@@ -149,6 +177,7 @@ hr {
 
 .box-item {
 	text-align: center;
+	height: 100%
 }
 
 .icon-margin {
@@ -158,4 +187,28 @@ hr {
 .intro-text {
 	font-size: 18px;
 	font-family: Helvetica,Arial,sans-serif;
+}
+
+footer {
+	background: url("../pic/footer.png") no-repeat;
+	background-size: cover;
+	height: 100px;
+	text-align: center;
+}
+
+.index-footer {
+	background-color: rgba(0,0,0,0.4);
+	height: 100px;
+}
+
+.social-media{
+	margin: 15px;
+}
+
+.social-media-margin{
+	margin-left: 100px;
+}
+
+.copyright{
+	color: #fff;
 }

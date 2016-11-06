@@ -15,6 +15,7 @@
 	
     <!-- My Own CSS -->
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -75,27 +76,30 @@
                     <h2>About Me</h2>
                     <center><hr /></center>
                 </div>
-                <div class="col-lg-3 box-item blue">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 box-item blue">
                     <i class="fa fa-user-circle fa-4x icon-margin" aria-hidden="true"></i>
                     <h3>Name</h3>
                     <p class="intro-text">My Chinese name is Haoyou Liu
                     <br>(i.e.刘豪右)
                     <br>Or you can call me Zack</p>
                 </div>
-                <div class="col-lg-3 box-item red">
+                <div class="col-lg-3 ol-sm-6 box-item red">
                     <i class="fa fa-graduation-cap fa-4x icon-margin" aria-hidden="true"></i>
                     <h3>School</h3>
-                    <p class="intro-text">I finishied my undergraduate study at Wuhan University
+                    <p class="intro-text">I finishied my undergraduate study 
+                    <br>at Wuhan University
                     <br>Now I'm studying at U-M</p>
                 </div>
-                <div class="col-lg-3 box-item yellow">
+                <div class="col-lg-3 col-sm-6 box-item yellow">
                     <i class="fa fa-university fa-4x icon-margin" aria-hidden="true"></i>
                     <h3>Address</h3>
                     <p class="intro-text">I live in Apt.410
-                    <br>Broadway St
+                    <br>1760 Broadway St
                     <br>Ann Arbor</p>
                 </div>
-                <div class="col-lg-3 box-item green">
+                <div class="col-lg-3 col-sm-6 box-item green">
                     <i class="fa fa-plane fa-4x icon-margin" aria-hidden="true"></i>
                     <h3>Hometown</h3>
                     <p class="intro-text">I came from Wenzhou, China
@@ -106,14 +110,57 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid index-footer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-media">
+                        <i class="fa fa-weixin fa-3x wechat-green" aria-hidden="true"></i>
+                        <i class="fa fa-weibo fa-3x social-media-margin weibo-red" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/haoyou.liu.3">
+                            <i class="fa fa-facebook fa-3x social-media-margin facebook-blue" aria-hidden="true"></i>
+                        </a>
+                        <i class="fa fa-twitter fa-3x social-media-margin twitter-blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="copyright">
+                        Copyright &copy; 2016, Haoyou Liu. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 	
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var offset=$(".navbar").height()+10;
+            var nav=$(".navbar-default");
+            var brand=$(".navbar-default .navbar-brand")
+
+            brand.addClass("brand-still");
+            
+            $(window).scroll(function(){
+                if($(this).scrollTop()>offset){
+                    nav.addClass("nav-scroll");
+                    brand.addClass("brand-scroll").removClass("brand-still");
+                }
+                else{
+                    nav.removeClass("nav-scroll");
+                    brand.addClass("brand-still").removeClass("brand-scroll");
+                }
+            })
+        })
+    </script>
 
 	<!-- Bootstrap Javascript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
