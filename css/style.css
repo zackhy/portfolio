@@ -59,6 +59,10 @@ html, body {
 	color: #3cba54;
 }
 
+.white {
+	color: #fff;
+}
+
 .page-body {
 	height: auto !important;
 	min-height: 100%;
@@ -597,17 +601,19 @@ hr {
 
 #interest {
 	height: 100%;
+	margin-bottom: 50px;
 }
 
 @media(min-width: 768px) {
 	#interest {
-	    margin-top: 50px;
+	    margin-top: 30px;
+	    margin-bottom: 80px;
     }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 992px) {
 	#interest {
-	    margin-top: 80px;
+	    margin-bottom: 110px;
     }
 }
 
