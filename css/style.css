@@ -615,6 +615,28 @@ hr {
 	margin-bottom: 10px;
 }
 
+/*#photos {
+	margin: 0 auto;
+}*/
+
+.photo {
+	margin-bottom: 20px;
+}
+
+.photo img {
+	width: 250px;
+	height: 150px;
+}
+
+.music_player a {
+	color: #db3236;
+	cursor: pointer;
+}
+
+.music_player a:hover{
+	color: #fff;
+}
+
 /* footer style */
 #index-footer {
 	background: url("../pic/footer.png") no-repeat;
@@ -675,23 +697,4 @@ hr {
 	    color: #fff;
 	    font-size: 16px;
     }
-}
-
-#photos {
-	margin: 0 auto;
-}
-
-.photo img {
-	width: 250px;
-	height: 150px;
-	margin: 10px;
-}
-
-.music_player a {
-	color: #db3236;
-	cursor: pointer;
-}
-
-.music_player a:hover{
-	color: #fff;
 }
