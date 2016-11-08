@@ -66,6 +66,10 @@ html, body {
 	padding-bottom: 30px;
 }
 
+.hr-center {
+	text-align: center;
+}
+
 /* headings */
 h1 {
 	text-transform: uppercase;
